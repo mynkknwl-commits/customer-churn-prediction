@@ -1,20 +1,22 @@
 # Customer Churn Prediction Using Machine Learning
 
-## Project Overview
+## 📌 Project Overview
 
-This project predicts whether a customer is likely to churn or stay using Machine Learning.
+This project predicts whether a customer is likely to **churn (leave the service)** or **stay** based on customer information.
 
-The project uses the Telco Customer Churn dataset and a Logistic Regression classification model. A Streamlit web application allows users to enter customer details and receive a churn prediction.
+The project uses Machine Learning techniques to train a classification model and provides a **Streamlit web application** where users can enter customer details and get a churn prediction with probability.
 
-## Objective
+## 🎯 Objective
+
+The main objective of this project is to:
 
 - Analyze customer churn data
-- Preprocess the data
+- Preprocess categorical and numerical features
 - Train a Machine Learning classification model
-- Predict customer churn
-- Display predictions through a Streamlit web application
+- Predict whether a customer is likely to churn
+- Display the prediction through an interactive web application
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -22,76 +24,54 @@ The project uses the Telco Customer Churn dataset and a Logistic Regression clas
 - Joblib
 - Streamlit
 - Jupyter Notebook
-- Git & GitHub
 
-## Machine Learning
+## 🤖 Machine Learning Model
 
-The main model used is Logistic Regression.
+The project uses:
 
-A Decision Tree model was also used for comparison.
+- **Logistic Regression** as the main prediction model
+- **Decision Tree** for comparison
+- **StandardScaler** for scaling numerical features
+- **One-Hot Encoding** for categorical features
 
-The project uses One-Hot Encoding for categorical features and StandardScaler for numerical features.
+### Dataset
 
-## Dataset
+The project uses the **Telco Customer Churn** dataset.
 
-The project uses the Telco Customer Churn dataset.
+The dataset contains information about customers such as:
+
+- Gender
+- Senior Citizen
+- Partner
+- Dependents
+- Tenure
+- Phone Service
+- Internet Service
+- Contract
+- Monthly Charges
+- Total Charges
 
 The target variable is:
 
-- 1 ? Customer is likely to churn
-- 0 ? Customer is likely to stay
+**Churn**
+- `1` → Customer is likely to churn
+- `0` → Customer is likely to stay
 
-## Project Structure
+## 📂 Project Structure
 
-- data/
-- notebook/
-- app.py
-- churn_model.pkl
-- scaler.pkl
-- feature_columns.pkl
-- requirements.txt
-- .gitignore
-- README.md
-
-## How to Run
-
-Clone the repository:
-
-    git clone https://github.com/mynkknwl-commits/customer-churn-prediction.git
-
-Open the project:
-
-    cd customer-churn-prediction
-
-Install dependencies:
-
-    pip install -r requirements.txt
-
-Run the application:
-
-    streamlit run app.py
-
-## Application
-
-The Streamlit application provides:
-
-- Customer churn prediction
-- Churn probability
-
-## Learning Outcomes
-
-- Data preprocessing
-- Machine Learning classification
-- Feature encoding
-- Feature scaling
-- Model training
-- Model saving and loading
-- Streamlit
-- Git and GitHub
-- Deployment
-
-## Author
-
-Mayank Singh Kanwal
-
-B.Sc. Information Technology Student
+```text
+customer-churn-prediction/
+│
+├── data/
+│   └── customer_churn.csv
+│
+├── notebook/
+│   └── Customer_Churn_Prediction.ipynb
+│
+├── app.py
+├── churn_model.pkl
+├── scaler.pkl
+├── feature_columns.pkl
+├── requirements.txt
+├── .gitignore
+└── README.md
